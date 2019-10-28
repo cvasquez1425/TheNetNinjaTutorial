@@ -11,6 +11,15 @@
     <div id="app">
         <h1>Events</h1>
         <p>{{ message }}</p>
+        <button v-on:click="add(1)">Add a year</button>
+        <button @click="substract(1)">Substract a Year</button>
+        <button v-on:dblclick="add(10)">Add 10 Years</button>
+        <button @dblclick="substract(10)">Substract 10 Years</button>
+        <p>My age is {{ age }}</p>
+        <div id="canvas" @mousemove="updateXY">{{x}}, {{y}}
+
+        </div>
+
     </div>
 
     <script src="./app.js"></script>
